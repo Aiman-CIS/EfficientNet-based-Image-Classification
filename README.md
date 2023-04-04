@@ -1,1 +1,4 @@
 # EfficientNet-based-Image-Classification
+This code trains a deep learning model for image classification using transfer learning with the EfficientNetB0 architecture. The dataset is loaded using an imageDatastore. The dataset is split into training, validation, and test sets using the splitEachLabel function. The EfficientNetB0 architecture is loaded and modified to include a new convolutional layer, a fully connected layer for feature learning, and a classification layer. The new network is trained using the training set and validation set with stochastic gradient descent optimization. The model is then saved.
+After training, the trained model is loaded, and the test set is loaded using an augmentedImageDatastore. The classify function is used to predict the labels for the test set images, and the accuracy is calculated. Finally, a random selection of four images from the test set is displayed along with their predicted labels and probabilities.
+
